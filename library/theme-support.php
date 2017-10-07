@@ -49,6 +49,13 @@ function foundationpress_theme_support() {
         'default-image' => '',
         //'wp-head-callback' => 'foundationpress_custom_background_cb',
     )));
+
+    // Set up the Wordpress Theme logo feature.
+    add_theme_support('custom-logo', array(
+        'width' => 500,
+        'height' => 250,
+        'flex-width' => true,
+    ));
 }
 
 add_action( 'after_setup_theme', 'foundationpress_theme_support' );

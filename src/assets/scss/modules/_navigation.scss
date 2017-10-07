@@ -54,11 +54,26 @@
 
 .top-bar {
 
-  .top-bar-title a {
-    font-size: 1rem;
-    color: #B9B9B9;
-    padding-left: 1rem;
-    line-height: 1.8;
+  .custom-logo-link {
+    display: inline-block;
+    padding-right: 1em;
+    vertical-align: middle;
+    width: auto;
+
+    img {
+      display: inline-block;
+      width: auto;
+    }
+  }
+
+  .top-bar-title {
+    display: inline-block;
+    a {
+      font-size: 1rem;
+      color: #B9B9B9;
+      padding-left: 1rem;
+      line-height: 1.8;
+    }
   }
 
   .menu a {
