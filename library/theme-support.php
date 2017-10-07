@@ -42,6 +42,13 @@ function foundationpress_theme_support() {
 
 	// Add foundation.css as editor style https://codex.wordpress.org/Editor_Style
 	add_editor_style( 'dist/assets/css/app.css' );
+
+    // Set up the WordPress core custom background feature.
+    add_theme_support('custom-background', apply_filters('foundationpress_custom_background_args', array(
+        'default-color' => 'ffffff',
+        'default-image' => '',
+        //'wp-head-callback' => 'foundationpress_custom_background_cb',
+    )));
 }
 
 add_action( 'after_setup_theme', 'foundationpress_theme_support' );
